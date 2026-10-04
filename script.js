@@ -1,1 +1,1 @@
-alert("Selamat Datang");
+//alert("Selamat Datang");

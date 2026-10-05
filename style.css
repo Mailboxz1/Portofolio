@@ -1,7 +1,7 @@
 body{
     background-color: #092328;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -10,9 +10,9 @@ header {
     padding: 1.5rem 10%;
     background-color:  #12544F;
     gap: 0.8rem;
+    position: sticky;   
     top: 0;
     z-index: 100;
-    position: sticky;
 }
 
 header img {
@@ -22,21 +22,23 @@ header img {
     border-radius: 50%;
 }
 
-header :hover{
-    color: #8BBB92;
-}
-
 header i{
+    font-size: 1.2rem;
     font-family: Impact;
     color: #000000;
-    text-decoration: none;
     transition: color 0.3s;
+}
+
+nav{
+    margin-left: auto;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     gap: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
@@ -44,6 +46,10 @@ nav a {
     color: #000000;
     text-decoration: none;
     transition: color 0.3s;
+}
+
+nav a:hover{
+    color: #8BBB92;
 }
 
 section {
@@ -72,6 +78,10 @@ section {
 
 .hero hr{
     width: 20rem;
+    border: none;
+    height: 2px;
+    background-color:#2A835F;
+    margin: 1rem auto;
 }
 
 .hero p{
@@ -80,46 +90,89 @@ section {
     margin-bottom: 2rem;
 }
 
-.project {
+.portofolio {
     text-align: center;
     padding: 5rem 1rem;
     background:  linear-gradient(180deg, #092328 0%, #12544F 100%);;
     font-family: Impact;
 }
 
-.project h2{
+.portofolio h2{
     color:#2A835F;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.project-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-}
-
-.card {
-    background-color: #092328;
-    padding: 1rem;
-    border-radius: 12px;
-    border: 2px solid #000000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-}
-
-.card u{
-    margin-top: 0.8rem;
-    color: #8BBB92;
+.portofolio h3{
     font-size: 1.5rem;
+    font-style: italic;
+    color:#8BBB92;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.card img{
-    width: 100%;          
-    height: 300px;        
-    object-fit: contain;  
-    border-radius: 8px;
-    background-color: #092328;
+.portofolio table{
+    margin: 0 auto;
+    border-spacing: 1.5rem;
+    border-collapse: separate;
 }
+
+.portofolio table td{
+    padding: 1rem;
+    vertical-align: top;
+    text-align: center;
+    width: 220px;
+}
+
+.portofolio-table-img{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+}
+
+.portofolio img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.portofolio strong{
+    color: #000000;
+    font-family: Impact;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+}
+
+.about {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #12544F;
+    font-family: Impact;
+}
+
+.about h2{
+    text-align: center;
+    color:#2A835F;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about p{
+    text-align: center;
+    color:#000000;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(0deg, #092328 0%, #12544F 100%);
+  color:#8BBB92;
+  font-size: 0.9rem;
+}
+

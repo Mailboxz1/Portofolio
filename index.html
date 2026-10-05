@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Liam</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aos.css">
 </head>
-<body>
+<body data-aos="fade-down">
     <header>
             <img src="img/Tree.png" alt="logo portofolio">
             <i>Liam</i>
@@ -20,7 +21,7 @@
     </header>
     <section id="hero" class="hero">
         <h1>HOME</h1>
-        <img src="img/Tree.png" alt="logo portofolio">
+        <img src="img/Tree.png" alt="logo portofolio" data-tilt data-tilt-max="20" data-tilt-speed="400">
         <h1>Liam</h1>
         <hr>
         <p>Game Developer</p>
@@ -28,7 +29,7 @@
     <section id="portofolio" class="portofolio">
         <h2>PORTOFOLIO</h2>
         <h3>Character</h3>
-            <table>
+            <table data-aos="zoom-in">
                 <tr>
                     <td>
                         <div class="portofolio-table-img">
@@ -39,7 +40,7 @@
                 </tr>
             </table>
         <h3>Background</h3>
-            <table>
+            <table data-aos="zoom-in">
                 <tr>
                     <td>
                         <div class="portofolio-table-img">
@@ -62,7 +63,7 @@
                 </tr>
             </table>
         <h3>Animation</h3>
-            <table>
+            <table data-aos="zoom-in">
                 <tr>
                     <td>
                         <div class="portofolio-table-img">
@@ -92,6 +93,15 @@
     <footer>
         <p>&copy; 2026 Portofolio Saya. Hosted on GitHub Pages.</p>
     </footer>
+    <script src="vanilla-tilt.min.js"></script>
+    <script src="aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: true
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
